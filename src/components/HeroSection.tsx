@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -63,13 +62,15 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
-              <div className="w-80 h-80 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="w-72 h-72 bg-white rounded-full flex items-center justify-center">
-                  <div className="text-primary-600 text-6xl font-bold">D</div>
-                </div>
+              <div className="w-80 h-80 bg-gradient-to-br from-primary-100 to-primary-200 rounded-full flex items-center justify-center shadow-2xl overflow-hidden">
+                <img 
+                  src="https://i.postimg.cc/0Nc8WKkZ/Profile-Pic.jpg" 
+                  alt="Divakar - Java Full Stack Developer"
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
               {/* Decorative ring */}
               <div className="absolute -top-4 -left-4 w-88 h-88 border-4 border-primary-200 rounded-full opacity-50"></div>
